@@ -2,4 +2,29 @@
 
 {{ .Content }}
 
+<ul class="page-list">
+    {{ range .Pages -}}
+    <li class="page-list-item">
+        <a class="page-list-item-link" href="{{ .RelPermalink }}">
+            <h2 class="page-list-item-title">{{ .Title }}</h2>
+            <h5 class="page-list-item-date">{{ .Date.Format "Jan 2, 2006 [3:04 PM]" }}</h5>
+            <h5 class="page-list-item-readingtime">
+                {{ if le .ReadingTime 1 -}}
+                ≤ {{ .ReadingTime }}
+                {{- else -}}
+                {{ .ReadingTime }}
+                {{- end }}
+                minute read.
+            </h5>
+            {{ if isset .Params "tags" -}}
+            <div class="page-list-item-tags">
+                <i>Tagged as: </i>
+                {{ delimit .Params.tags ", " }}
+            </div>
+            {{- end }}
+        </a>
+    </li>
+    {{- end }}
+</ul>
+
 {{ end }}

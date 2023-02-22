@@ -6,6 +6,8 @@ body {
     background-color: #1d2021;
     color: #fbf1c7;
     font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    max-width: 55rem;
 }
 
 .center-screen {
@@ -18,7 +20,8 @@ body {
 
 .index-card {
     border-radius: 1rem;
-    box-shadow: 1rem 1rem 2rem #181b1c, -1rem -1rem 2rem #222526;
+    box-shadow: 1rem 1rem 2rem #181b1c,
+        -1rem -1rem 2rem #222526;
     margin: 1rem auto;
     max-width: 30rem;
     padding: 1rem;
@@ -39,6 +42,94 @@ body {
     .header-title {
         font-size: 5rem;
     }
+}
+
+.social-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-list-item {
+    margin: 0 0.5rem;
+}
+
+.social-list-item-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-list-item-link:hover {
+    background: #666;
+}
+
+.section-list {
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.section-list-item-link {
+    text-decoration: none;
+    color: #0080ff;
+}
+
+.section-list-item-link:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+.nav {
+    margin: 1rem auto;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem #121414,
+        -1rem -1rem 2rem #222526;
+    padding: 0.5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list-item {
+    margin-right: 2rem;
+}
+
+.nav-list-item-link {
+    color: #0080ff;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+.nav-list-item-link:hover {
+    color: #ccc;
+}
+
+.page-list {
+    list-style-type: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.page-list-item:not(:last-child) {
+    border-bottom: 0.1rem solid #777;
+}
+
+.page-list-item-link {
+    background-color: rgba(0,0,0,0.2);
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.page-list-item-title {
+    margin: 0;
 }
 
 /* utils */

@@ -1,23 +1,29 @@
 {{ define "body" }}
 
-<div class="index-card">
+<article class="index-card">
     <h1 class="header-title">Jesse</h1>
     <h2>Hello 👋!</h2>
     <p>
-        A computer science student, I'm interested in developing a
-        wide range of software, from creating websites to making video
-        games. I love finding elegant ways to complete a task,
-        especially when it reduces overhead and complexity.
+        A computer science student. Interested in developing a
+        wide range of software, whether it's games, websites, or desktop/mobile
+        applications.
     </p>
-    <ul>
-        <li><i class="fa-brands fa-github"></i></li>
-    </ul>
-    <ul>
+    <ul class="section-list">
         {{ range .Site.Sections -}}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <li class="section-list-item">
+            <a class="section-list-item-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>
         {{- end }}
+    </ul>
+    <ul class="social-list">
+        <li class="social-list-item">
+            <a class="social-list-item-link"
+               href="https://github.com/JessebotX"
+               title="JessebotX on GitHub">
+                <i class="fa-brands fa-github"></i>
+                JessebotX
+            </a>
+        </li>
     </ul>
 </div>
 
