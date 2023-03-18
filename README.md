@@ -1,3 +1,5 @@
+> NOTE: To see old site made with gohugo.io, check out the `old` branch
+
 # jessebotics.online
 
 My personal website made with Next.js.
