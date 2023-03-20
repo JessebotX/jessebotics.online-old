@@ -13,8 +13,8 @@ export default function Blog({ posts }) {
         {posts.map(({ slug, frontMatter }) => (
           <Link key={slug} href={`/blog/${slug}`} className="post-link" passHref>
             <div className="row">
-              <h2 className="col post-link-title">{frontMatter.title}</h2>
-              <p className="col post-link-date">{frontMatter.date}</p>
+              <h2 className="col-9 post-link-title">{frontMatter.title}</h2>
+              <p className="col-3 post-link-date">{frontMatter.date}</p>
             </div>
             <div className="row">
               <p className="col post-link-author">{frontMatter.author}</p>
@@ -45,7 +45,7 @@ export async function getStaticProps() {
     }
   }).sort((a, b) => {
     new Date(b.frontMatter.date).getTime() - new Date(a.frontMatter.date).getTime()
-  })
+  }).reverse()
 
   return {
     props: {

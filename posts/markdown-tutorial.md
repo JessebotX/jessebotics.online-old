@@ -4,11 +4,19 @@ author: Jesse Huang
 date: "2023-03-17"
 ---
 
-Here is a quick overview of CommonMark Markdown, a strongly defined specification of Markdown. For more information, see <https://commonmark.org/>
+# What is Markdown
+
+Markdown is a markup language created by John Gruber and Aaron Swartz in 2004,
+designed to be readable in its source code form. The original markdown tool
+allows users to write in plain text and have it be converted into HTML. Since
+then, Markdown has been widely adopted into platforms such as [GitHub][2], [Discord][3],
+and [Reddit][4]. Tools like [pandoc][5] allow converting Markdown source code into different formats including but not limited to PDF, LaTeX and docx.
+
+There are many different implementations of Markdown, but this article will only showcase the basics of [CommonMark Markdown][6], a strongly defined specification of Markdown designed to remove the ambiguities in the original language.
 
 # Getting Started
 
-Create a new markdown file with the `.md` extension. (E.g. `example.md`) Then open the file with any plain text editor.
+Create a new file with a `.md` file extension (E.g. `example.md`). Then open the file with any plain text editor.
 
 # Headings
 There are two ways to create headings. One way is to prepend a hashtag in front of the desired heading title. You can have up to 6 levels of headings.
@@ -32,7 +40,7 @@ Heading 2 Title
 ---------------
 ```
 
-The underlines could be of any length (>= 1). As you can see however, you can only have 2 levels of headings using this method.
+The underlines could be of any length (>= 1). As you can see however, you can only have 2 levels of headings when using this method.
 
 # Italics and Bold
 
@@ -212,3 +220,18 @@ Both results in
 
     int x = 1;
     int y = x * 2 + z(x);
+
+# See Also
+1. <https://daringfireball.net/projects/markdown/>
+2. <https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>
+3. <https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline->
+4. <https://www.reddit.com/wiki/markdown/>
+5. <https://pandoc.org/>
+6. <https://commonmark.org>
+
+[1]: https://daringfireball.net/projects/markdown/
+[2]: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[3]: https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-
+[4]: https://www.reddit.com/wiki/markdown/
+[5]: https://pandoc.org/
+[6]: https://commonmark.org

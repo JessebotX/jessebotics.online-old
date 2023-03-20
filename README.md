@@ -14,3 +14,5 @@ My personal website made with Next.js.
 ## Getting started
 1. `npm i` to install packages
 2. `npm run dev` to start dev server
+3. `npm run build` to build a production ready site
+4. Use `rsync` to upload to remote VPS server (jessebotics.online)

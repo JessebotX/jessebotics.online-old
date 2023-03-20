@@ -12,8 +12,8 @@ export default function Home() {
           <h1 className="index-intro-title">Jesse Huang</h1>
           <p className="index-intro-description">
             👋 Hello, world!
-            A computer science student. Interested in developing a wide range of
-            software, whether it&lsquo;s games, websites, or desktop/mobile
+            I&apos;m a computer science student interested in developing a wide range of
+            software, whether it involves games, web, desktop, or mobile
             applications.
           </p>
         </div>
