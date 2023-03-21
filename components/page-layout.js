@@ -16,7 +16,7 @@ export default function PageLayout({ title, description, noFooter, children }) {
       { noFooter ?
       "" : 
       <footer className={`${roboto.className} footer`}>
-        <Link href="/"><FontAwesomeIcon icon={faGlobe} /> https://jessebotics.online</Link>
+        <Link href="/">🌐 https://jessebotics.online</Link>
       </footer>
       }
     </>
