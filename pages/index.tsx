@@ -1,23 +1,28 @@
 import RootLayout from "@/components/layouts/root-layout"
 import Link from "next/link"
+import Cursor from "@/components/cursor"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 export default function Home() {
   return (
     <RootLayout title="Jessebot">
-      <div id="root-index" className="flex h-screen items-center justify-center">
-        <div className="flex flex-col items-end">
+      <Cursor />
+      <div id="root-index" className="flex h-screen items-center justify-center text-black">
+        <div className="flex flex-col items-end relative">
           <h1 className="text-right text-5xl">Jessebot</h1>
           <p className="text-right max-w-[20ch]">A computer science student passionate about programming and software development.</p>
         </div>
-        <ul className="ms-5">
+        <ul className="ms-5 relative">
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects" className="underline font-bold hover:no-underline hover:text-white hover:bg-black">Projects</Link>
           </li>
           <li>
-            <Link href="/projects">Blog</Link>
+            <Link href="/blog" className="underline font-bold hover:no-underline hover:text-white hover:bg-black">Blog</Link>
           </li>
           <li>
-            <Link href="https://github.com/JessebotX">GitHub</Link>
+            <Link href="https://github.com/JessebotX" className="underline font-bold hover:no-underline hover:text-white hover:bg-black">
+            <FontAwesomeIcon icon={faGithub} /> Github</Link>
           </li>
         </ul>
       </div>

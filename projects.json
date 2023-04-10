@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Personal Website",
+    "description": "A personal static website made with Next.js",
+    "link": "https://github.com/JessebotX/jessebotics.online",
+    "tools": ["Next.js", "React", "HTML/CSS", "TailwindCSS", "ESLint", "TypeScript", "JavaScript", "VS Code", "Node.js"]
+  },
+  {
+    "name": "Cooperative Achievement Android App",
+    "description": "Record played games and be rewarded with a collective achievement.",
+    "link": "https://github.com/JessebotX/CooperativeAchievementApp",
+    "tools": ["Android", "Java", "Agile", "IntelliJ"]
+  },
+  {
+    "name": "Stardew Valley Mods Collection",
+    "description": "A monorepo of 20+ mods for Stardew Valley (7 written in C#).",
+    "link": "https://github.com/JessebotX/StardewValleyMods",
+    "tools": ["C#", ".NET", "SMAPI", "Visual Studio"]
+  },
+  {
+    "name": "Mutant Tracker Client + Server",
+    "description": "Store a list of \"mutants\" on a server that can be managed using a desktop client.",
+    "link": "https://github.com/JessebotX/MutantTracker",
+    "tools": ["Java", "JavaFX", "Spring", "IntelliJ"]
+  },
+  {
+    "name": "Scripts Collection",
+    "description": "A collection of scripts for managing system/workflow/productivity.",
+    "link": "https://github.com/JessebotX/bin",
+    "tools": ["Bash", "Shell", "Linux", "Terminal", "Vim"]
+  }
+]
