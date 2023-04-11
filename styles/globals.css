@@ -6,6 +6,10 @@
   @apply bg-black text-white;
 }
 
+a {
+  @apply text-blue-600 underline hover:text-blue-700 hover:no-underline;
+}
+
 #root-index {
   animation: gradient 10s ease infinite;
   background: linear-gradient(-45deg, #f43f5e, #a5b4fc, #ffffff);

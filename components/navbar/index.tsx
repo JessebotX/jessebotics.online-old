@@ -36,13 +36,13 @@ export default function Navbar() {
     <nav className="max-w-6xl mx-auto p-2 mb-2 flex justify-between">
       <ul className="flex items-center">
         <li className="mr-4">
-          <Link href="/" className="font-bold text-lg">Jessebot</Link>
+          <Link href="/" className="font-bold text-lg text-black dark:text-white no-underline hover:text-black dark:hover:text-white">Jessebot</Link>
         </li>
         <li className="">
-          <Link href="/projects" className="hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl p-4">Projects</Link>
+          <Link href="/projects" className="hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl p-4 text-black dark:text-white no-underline">Projects</Link>
         </li>
         <li>
-          <Link href="/blog" className="hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl p-4">Blog</Link>
+          <Link href="/blog" className="hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl p-4 text-black dark:text-white no-underline">Blog</Link>
         </li>
       </ul>
       <button className="bg-orange-500 px-3 py-2 rounded-full shadow-xl" onClick={toggleTheme}><FontAwesomeIcon icon={faCircleHalfStroke} /></button>

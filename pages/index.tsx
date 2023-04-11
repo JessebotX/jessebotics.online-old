@@ -15,13 +15,13 @@ export default function Home() {
         </div>
         <ul className="ms-5 relative">
           <li>
-            <Link href="/projects" className="underline font-bold hover:no-underline hover:text-white hover:bg-black">Projects</Link>
+            <Link href="/projects" className="text-black underline font-bold hover:no-underline hover:text-white hover:bg-black">Projects</Link>
           </li>
           <li>
-            <Link href="/blog" className="underline font-bold hover:no-underline hover:text-white hover:bg-black">Blog</Link>
+            <Link href="/blog" className="text-black underline font-bold hover:no-underline hover:text-white hover:bg-black">Blog</Link>
           </li>
           <li>
-            <Link href="https://github.com/JessebotX" className="underline font-bold hover:no-underline hover:text-white hover:bg-black">
+            <Link href="https://github.com/JessebotX" className="text-black underline font-bold hover:no-underline hover:text-white hover:bg-black">
             <FontAwesomeIcon icon={faGithub} /> Github</Link>
           </li>
         </ul>
