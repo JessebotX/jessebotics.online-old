@@ -3,11 +3,50 @@
 @tailwind utilities;
 
 .dark body {
-  @apply bg-black text-white;
+  @apply text-white;
+  background: linear-gradient(45deg, #0f172a, #0f172a, #000, #000, #000, #991b1b);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+h1 {
+  @apply text-3xl my-3;
+}
+
+h2 {
+  @apply text-2xl my-3;
+}
+
+h3 {
+  @apply text-xl my-3;
+}
+
+pre {
+  @apply border-2 dark:border-slate-800;
+  padding: 1rem 2rem;
+  margin: 0;
+  border-radius: 30px;
+  overflow-x: auto;
+}
+
+p {
+  @apply my-2;
 }
 
 a {
   @apply text-blue-600 underline hover:text-blue-700 hover:no-underline;
+}
+
+ul, ol {
+  @apply ps-3 m-2;
+}
+
+li {
+  @apply list-disc;
+}
+
+ol li {
+  @apply list-decimal;
 }
 
 #root-index {

@@ -34,14 +34,14 @@ export default function Navbar() {
 
   return (
     <nav className="max-w-6xl mx-auto p-2 mb-2 flex justify-between">
-      <ul className="flex items-center">
-        <li className="mr-4">
+      <ul className="flex items-center p-0 m-0 list-none">
+        <li className="mr-4 list-none p-0 m-0">
           <Link href="/" className="font-bold text-lg text-black dark:text-white no-underline hover:text-black dark:hover:text-white">Jessebot</Link>
         </li>
-        <li className="">
+        <li className="list-none p-0 m-0">
           <Link href="/projects" className="hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl p-4 text-black dark:text-white no-underline">Projects</Link>
         </li>
-        <li>
+        <li className="list-none p-0 m-0">
           <Link href="/blog" className="hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl p-4 text-black dark:text-white no-underline">Blog</Link>
         </li>
       </ul>

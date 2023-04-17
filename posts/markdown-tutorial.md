@@ -40,7 +40,7 @@ Heading 2 Title
 ---------------
 ```
 
-The underlines could be of any length (>= 1). As you can see however, you can only have 2 levels of headings when using this method.
+The underlines could be of any length (>= 1). However, you can only have 2 levels of headings when using this method.
 
 # Italics and Bold
 
@@ -97,7 +97,7 @@ venenatis at, tempor vitae libero. Vivamus mi augue, cursus id nibh et, ornare
 consequat nisl. 
 ```
 
-**Example:**
+**Example output:**
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lacinia vitae
 orci a volutpat. Pellentesque rhoncus odio magna, ut efficitur ipsum iaculis
@@ -142,7 +142,8 @@ Two ways to create links:
 [1]: https://jessebotics.online
 ```
 
-Eg. [Check out my website!](https://jessebotics.online)
+Example output: [Check out my website!](https://jessebotics.online)
+
 # Lists
 
 2 types of lists you can create: unordered and ordered

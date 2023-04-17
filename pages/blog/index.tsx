@@ -16,29 +16,30 @@ export default function BlogIndex({ posts }: any) {
   }
 
   const getDateString = (dateString: string): string => {
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     const date = new Date(dateString)
 
     const year = date.getFullYear()
-    const month = twoDigits(date.getMonth() + 1)
+    const month = date.getMonth()
     const day = twoDigits(date.getDate() + 1)
-    const hour = twoDigits(date.getHours() + 1)
-    const minute = twoDigits(date.getMinutes() + 1)
+    // const hour = twoDigits(date.getHours() + 1)
+    // const minute = twoDigits(date.getMinutes() + 1)
 
-    return `${year}-${month}-${day} ${hour}:${minute}`
+    return `${monthNames[month]} ${day}, ${year}`
   }
 
   return (
-    <RootLayout title="Blog | Jessebot" className="dark:bg-black">
+    <RootLayout title="Blog | Jessebot">
       <Navbar />
       <main className="mx-auto max-w-6xl mt-6">
         <h1 className="text-3xl my-4 text-center">Blog Posts</h1>
         {
           posts.map(({ slug, frontMatter }: Post) => (
-            <li key={slug} className="list-none md:flex md:flex-wrap justify-between p-2 border dark:border-slate-700">
-              <Link href={`/blog/${slug}`}>
-                <h1>{frontMatter.title}</h1>
+            <li key={slug} className="list-none">
+              <Link href={`/blog/${slug}`} className="flex flex-wrap justify-between items-center no-underline p-2 my-3 shadow-xl border-2 dark:border-slate-800 hover:-translate-x-1 active:translate-y-1 transition-all">
+                <h1 className="text-lg">{frontMatter.title}</h1>
+                <p className="text-black dark:text-white">{getDateString(frontMatter.date)}</p>
               </Link>
-              <p>{getDateString(frontMatter.date)}</p>
             </li>
           ))
         }
