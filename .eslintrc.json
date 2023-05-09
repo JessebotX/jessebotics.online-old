@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "arrow-spacing": "warn",
+    "curly": "warn",
+    "dot-location": ["warn", "property"],
+    "quotes": ["warn", "single", { "allowTemplateLiterals": true}],
+    "semi": ["warn", "never"],
+  }
 }
